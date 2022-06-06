@@ -30,6 +30,10 @@
             textarea{
                 resize: none;/*By setting the resize property to none, we are preventing the user from resizing the textarea/comment box.*/
             }
+
+            button{
+                background-color: forestgreen;
+            }
         
         </style>
     </head>
@@ -57,54 +61,54 @@
         <fieldset>
             <legend><h2>2.Which age category do you fall under?</h2></legend>
             <label for="Teen">Teenager
-                <input type="radio" id="Teen" name="age" value="Teen" >
+                <input type="radio" id="Teen" name="age" value="Teen" required>
             </label>
             <label for="Young-adult">20-24
-                <input type="radio" id="Young-adult" name="age" value="Young-adult" >
+                <input type="radio" id="Young-adult" name="age" value="Young-adult" required>
             </label>
             <label for="Adult"> 25-56
-                <input type="radio" id="Adult" name="age" value="Adult">
+                <input type="radio" id="Adult" name="age" value="Adult" required>
             </label>
             <label for="Senior">Senior citizen
-                <input type="radio" id="Senior" name="age" value="Senior">
+                <input type="radio" id="Senior" name="age" value="Senior" required>
             </label>
         </fieldset>
         <fieldset>
             <legend><h2>3.Race</h2></legend>
             <label for="African">African
-                <input type="radio" id="African" name="race" value="African" >
+                <input type="radio" id="African" name="race" value="African" required >
             </label>
             <label for="Indian">Indian
-                <input type="radio" id="Indian" name="race" value="Indian" >
+                <input type="radio" id="Indian" name="race" value="Indian" required>
             </label>
             <label for="White"> White
-                <input type="radio" id="White" name="race" value="White">
+                <input type="radio" id="White" name="race" value="White" required>
             </label>
             <label for="Colored">Colored
-                <input type="radio" id="Colored" name="race" value="Colored">
+                <input type="radio" id="Colored" name="race" value="Colored" required>
             </label>
             <label for="other">Other
-                <input type="radio" id="other" name="race" value="other">
+                <input type="radio" id="other" name="race" value="other" required>
                 <br>
             </label for="other">If other , please specify 
             <br>
-                <textarea id="other" name="race" row="3" cols="20">
+                <textarea id="other" name="race" row="3" cols="20" required>
                 </textarea>
             </label>
         </fieldset>
         <fieldset>
             <legend><h2>4.Where are you currently residing?</h2></legend>
             <label for="Gauteng">Gauteng
-                <input type="radio" id="Gauteng" name="location" value="Gauteng">
+                <input type="radio" id="Gauteng" name="location" value="Gauteng" required>
             </label>
             <label for="Durban">Durban
-                <input type="radio" id="Durban" name="location" value="Durban">
+                <input type="radio" id="Durban" name="location" value="Durban" required>
             </label>
             <label for="Gqeberha">Gqeberha
-                <input type="radio" id="Gqeberha"  name="location" value="Gqeberha">
+                <input type="radio" id="Gqeberha"  name="location" value="Gqeberha" required>
             </label>
             <label for="Cape Town">Cape Town
-                <input type="radio" id="Cape Town"  name="location" value="Cape Town">
+                <input type="radio" id="Cape Town"  name="location" value="Cape Town" required>
             </label>
         </fieldset>
         <fieldset>
@@ -161,13 +165,13 @@
         <fieldset>
             <legend><h2>9.Have you ever suffered from depression at any point in your life ?</h2></legend>
             <label for="Yes">Yes
-                <input type="radio" id="Yes" name="option" value="Yes">
+                <input type="radio" id="Yes" name="option" value="Yes" required>
             </label>
             <label for="No">No
-                <input type="radio" id="No" name="option" value="No">
+                <input type="radio" id="No" name="option" value="No" required>
             </label>
             <label for="Maybe">Maybe,not sure
-                <input type="radio" id="Maybe" name="option" value="Maybe">
+                <input type="radio" id="Maybe" name="option" value="Maybe" required>
             </label>
         </fieldset>
         <fieldset>
@@ -194,19 +198,19 @@
         <fieldset>
             <legend><h2>11.Are you a proponent of a plant-based diet?</h2></legend>
             <label for="Yes">Yes
-                <input type="radio" id="Yes" name="diet-approach" value="Yes">
+                <input type="radio" id="Yes" name="diet-approach" value="Yes" required>
             </label>
             <label for="No">No
-                <input type="radio" id="No"  name="diet-approach" value="No">
+                <input type="radio" id="No"  name="diet-approach" value="No" required>
             </label>
         </fieldset>
         <fieldset>
             <legend><h2>12.Do you read the nutritional information of your product(s)?</h2></legend>
             <label for="Yes">Yes
-                <input type="radio" id="Yes" name="nutrition" value="Yes">
+                <input type="radio" id="Yes" name="nutrition" value="Yes" required>
             </label>
             <label for="No">No
-                <input type="radio" id="No"  name="nutrition" value="No">
+                <input type="radio" id="No"  name="nutrition" value="No" required>
             </label>
         </fieldset>
         <fieldset>
@@ -224,6 +228,8 @@
                 <input type="checkbox" id="None"  name="weight management" value="None"> 
             </label>
         </fieldset>
+        <br>
+         <button type="submit" id="Submit">Submit Data</button>
         </form>
         </main>
     </body>
